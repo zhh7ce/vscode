@@ -2,13 +2,12 @@
 	"class": {
 		"prefix": "class",
 		"body": [
-			"class ${1:/* code */}",
-			"{",
+			"class ${1:/* code */} {",
 			"public:",
-			"	${1:/* code */}();",
-			"	~${1:/* code */}();",
+			"\t${1:/* code */}();",
+			"\t~${1:/* code */}();",
 			"private:",
-			"	$2",
+			"\t$2",
 			"};\n"
 		],
 		"description": "Class"
@@ -36,13 +35,11 @@
 	"try": {
 		"prefix": "try",
 		"body": [
-			"try",
-			"{",
-			"	$2",
+			"try {",
+			"\t$2",
 			"}",
-			"catch (const std::exception&)",
-			"{",
-			"	$1",
+			"catch (const std::exception&) {",
+			"\t$1",
 			"}"
 		],
 		"description": "try {..} catch {..}"
